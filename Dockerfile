@@ -1,6 +1,7 @@
 # NOTE: the Play Framework tests doesn't pass on Java 7
-FROM java:6
-#FROM williamyeh/java7 # TODO works better?
+# NOTE: I get some random error during the tests with java:6
+#FROM java:6
+FROM williamyeh/java7
 
 ENV PLAYFRAMEWORK_VERSION=2.3.10
 

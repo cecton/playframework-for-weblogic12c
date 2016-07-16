@@ -54,6 +54,8 @@ ENV PATH $PATH:/activator-$ACTIVATOR_VER-minimal
 # NOTE: install activator dependencies in the image already
 RUN activator list-templates || exit 0
 
+VOLUME /root/.ivy2
+
 RUN mkdir /app
 
 WORKDIR /app

@@ -1,4 +1,4 @@
-FROM java:6
+FROM java:7
 
 # Image with Oracle Java 7
 #FROM williamyeh/java7
